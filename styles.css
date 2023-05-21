@@ -1,0 +1,304 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos específicos para cada sección de la página */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  
+  nav ul {
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #inicio {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  #menu {
+    background-color: #eaeaea;
+    padding: 20px;
+  }
+  
+  #info {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  #contacto {
+    background-color: #eaeaea;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #09550f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media queries para responsive design */
+  @media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    #inicio, #menu, #info, #contacto {
+      padding: 10px;
+    }
+  }
+  /* Animación */
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicar la animación a un elemento en el HTML */
+  #inicio {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+
+
+  /* Diseño  */
+  h1, h2, h3 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menu ul li {
+    background-color: #e74c3c; 
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #menu ul li h3 {
+    font-size: 24px;
+  }
+  
+  #menu ul li p {
+    font-size: 16px;
+  }
+  
+  #info p {
+    font-size: 18px;
+  }
+  
+  #contacto-form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #contacto-form input,
+  #contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #contacto-form button {
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #contacto-form button:hover {
+    background-color: #2980b9; 
+  }
+  
+  .plato-pasta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 30px;
+    border-radius: 80%;
+    width: 200px;
+    height: 200px;
+    background-image: url(imagenes/plato-de-pasta.jpg); 
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Diseño de la plato-pasta */
+  @keyframes plato-pastaAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(calc(100% - 200px));
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  #inicio .plato-pasta {
+    position: relative;
+    animation: plato-pastaAnimation 4s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  /* Animación */
+  
+  @keyframes bounceAnimation {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+  #inicio .plato-pasta {
+    position: relative;
+    animation: plato-pastaAnimation 4s infinite, bounceAnimation 1s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes plato-pastaAnimation {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes bounceAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  #inicio .plato-pasta {
+    position: relative;
+    animation: plato-pastaAnimation 4s infinite, bounceAnimation 1s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #inicio {
+    border-radius: 3%;
+    background-image: url(imagenes/restaurante.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: full-screen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Estilos API */
+  #gallery {
+    background-color: beige;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .image {
+      margin: 10px;
+    }
+    
+    .image img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+   /* Estilos General */
+header {
+    background-color: #09550ff1;
+  }
+  
+ body {
+    background-color: beige;
+  }
+
+   .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    }
+    
+    .logo img{
+        border-radius: 3%;
+        align-items: center;
+        height: 100px;
+    }

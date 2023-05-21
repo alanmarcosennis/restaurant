@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Restaurante de Pasta Italiano</title>
+  <link rel="icon" href="icons/italy.ico" type="image/x-icon">
+
+
+</head>
+<body>
+  <header>
+   
+    <nav>
+        <div class="logo" >
+            <img src="imagenes/logo.jpg" alt="imagen logo">
+        </div>
+
+        <h1 style="margin-top: 20px;">Restaurante de Comida Italiana</h1>
+
+       <ul style="margin-top: 20px;">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="info.html">Información</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main>
+     <section id="inicio">
+        <div id="inicio">
+            <h2>Bienvenido a nuestro restaurante de pasta italiano</h2>
+            <div class="plato-pasta"></div>
+        </div>
+          
+     
+     </section>
+<hr>
+    <section id="menu">
+      <h2 style="margin-bottom: 10px;">Nuestro Menú de recomendados</h2>
+      <ul>
+        <li>
+          <h3>Spaghetti Carbonara</h3>
+          <p>Spaghetti con salsa carbonara hecha con panceta, huevo, queso y pimienta negra.</p>
+        </li>
+        <li>
+          <h3>Lasagna Bolognese</h3>
+          <p>Lasagna casera con salsa bolognesa, capas de pasta, carne y queso gratinado.</p>
+        </li>
+        <li>
+          <h3>Ravioli al Pomodoro</h3>
+          <p>Ravioli relleno de queso ricotta y espinacas servido con salsa de tomate casera.</p>
+        </li>
+      </ul>
+    </section>
+<hr>
+    <section id="info">
+      <h2>Información del Restaurante</h2>
+      <p>El Restaurante de Pasta Italiano se encuentra en el corazón de la ciudad. Nuestro equipo de chefs italianos se dedica a ofrecerte la mejor experiencia culinaria con platos auténticos y deliciosos.</p>
+    </section>
+<hr>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="contacto-form" action="#" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+<hr>
+  <footer>
+    <p>&copy; 2023 Restaurante de Pasta Italiano. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
